@@ -110,7 +110,7 @@
             <div class="contact_div">
                 <div class="contact_p">
                     <h1>Contact</h1>
-                    <p>Please join our Google group for direct communication at<rocling23-shared-task@googlegroups.com.></p>
+                    <p>Please join our Google group for direct communication at <a href="rocling23-shared-task@googlegroups.com" target="_blank">rocling23-shared-task@googlegroups.com.</a></p>
                 
                 </div>
             </div>
@@ -122,7 +122,14 @@
                 <p>Named Entity Recognition (NER) is a fundamental task in information extraction that locates the mentions of named entities and classifies them (e.g., person, organization and location) in unstructured texts. The NER task has traditionally been solved as a sequence labeling problem, where entity boundaries and category labels are jointly predicted. Chinese NER is more difficult to process than English NER. Chinese language is logographic and provides no conventional features like capitalization. In addition, due to a lack of delimiters between characters, Chinese NER is correlated with word segmentation, and named entity boundaries are also word boundaries. However, incorrectly segmented entity boundaries will cause error propagation in NER. For example, in a particular context, a disease entity “思覺失調症” (schizophrenia) may be incorrectly segmented into three words: “思覺” (thinking and feeling), “失調” (disorder) and “症” (disease).</p>
                 <p>In the digital era, healthcare information-seeking users usually search and browse web content in click-through trails to obtain healthcare-related information before making a doctor’s appointment for diagnosis and treatment. Web texts are valuable sources to provide healthcare information such as health-related news, digital health magazines and medical question/answer forums. Domain-specific healthcare information includes many proper names, mainly as named entities, such as “葡萄糖六磷酸鹽去氫酶” (Glucose-6-Phosphate Dehydrogenase; G6PD), “電腦斷層掃描” (computed tomography; CT), and “靜脈免疫球蛋白注射” (intravenous immunoglobulin; IVIG). In summary, Chinese healthcare NER is an important and essential task in natural language processing to automatically identify healthcare entities such as symptoms, chemicals, diseases, and treatments for machine reading and understanding.</p>
                 <p>Following the ROCLING-2022 shared task focused on Chinese healthcare NER, we organize a MultiNER-Health shared task for multi-genre NER in the healthcare domain. In this shared task, we have three genres:</p>
-                
+                <div class="part">
+                    <p>1.&nbsp;&nbsp;Formal texts (FT): this includes health news and articles written by professional editors or journalists.</p>
+                    <br>
+                    <p>2.&nbsp;&nbsp;Social media (SM): this contains texts from crowed users in medical question/answer forums.</p>
+                    <br>
+                    <p>3.&nbsp;&nbsp;Wikipedia articles (WA): this free online encyclopedia includes articles created and edited by volunteers worldwide</p>
+                    <br>
+                </div>
                 <p>Named entities may be used in different word forms in other genres. For example, “後天免疫缺乏症候群” (Acquired Immunodeficiency Syndrome; AIDS) is commonly used as a spoken language form “愛滋病” in the medical forums. On the other hand, “甘油三酯” is a different usage referred to as “三酸甘油酯” (triglyceride; TG) in Wikipedia.</p>
             </div>
 <!--             <div class="figure"> -->
@@ -500,13 +507,15 @@
                     
                     <div class="list">
                         <ul>
-                            <li>Release of test data: <strong>August 21, 2023</strong></li>
-                            <li>Testing results submission due: <strong>August 23, 2023</strong></li>
-                            <li>Release of evaluation results: <strong>August 26, 2023</strong></li>
-                            <li>System description paper due: <strong>September 9, 2023</strong></li>
-                            <li>Notification of Acceptance: <strong>September 23, 2023</strong></li>
-                            <li>Camera-ready deadline: <strong>October 7, 2023</strong></li>
-                            <li>Main conference: <strong>November 4-5, 2024</strong></li>
+                            <li>Release of training data: <strong>April 15, 2023</strong></li>
+                            <li>Shared task registration due: <strong>July 25, 2023</strong></li>
+                            <li>Release of test data: <strong>August 1, 2023</strong></li>
+                            <li>Testing results submission due: <strong>August 3, 2023</strong></li>
+                            <li>Release of evaluation results: <strong>August 7, 2023</strong></li>
+                            <li>System description paper due: <strong>August 25, 2023</strong></li>
+                            <li>Notification of Acceptance: <strong>September 8, 2023</strong></li>
+                            <li>Camera-ready deadline: <strong>September 15, 2023/strong></li>
+                            <li>Main conference: <strong>October 20-21, 2023</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -524,30 +533,8 @@
             <div class="list">
                 
                 <ul>
-                    <li>Rafael A. Calvo, and Sunghwan Mac Kim. 2013. Emotions in text: dimensional and categorical models. Computational Intelligence, 29(3):527-543.</li>
-                    <li>Munmun De Choudhury, Scott Counts, and Michael Gamon. 2012. Not all moods are created equal! Exploring human emotional states in social media. In Proc. of ICWSM-12, pages 66-73.</li>
-                    <li>Yu-Chih Deng, Cheng-Yu Tsai, Yih-Ru Wang, Sin-Horng Chen, and Lung-Hao Lee. 2022. Predicting Chinese Phrase-level Sentiment Intensity in Valence-Arousal Dimensions with Linguistic Dependency Features. IEEE Access, 10:126612-126620.</li>
-                    <li>Yu-Chih Deng, Yih-Ru Wang, Sin-Horng Chen, and Lung-Hao Lee. 2023. Towards Transformer Fusions for Chinese Sentiment Intensity Prediction in Valence-Arousal Dimensions. IEEE Access, 11:109974-109982.</li>
-                    <li>Steven Du and Xi Zhang. 2016. Aicyber’s system for IALP 2016 shared task: Character-enhanced word vectors and Boosted Neural Networks, In Proc. of IALP-16, pages 161–163.</li>
-                    <li>Pranav Goel, Devang Kulshreshtha, Prayas Jain and Kaushal Kumar Shukla. 2017. Prayas at EmoInt 2017: An Ensemble of Deep Neural Architectures for Emotion Intensity Prediction in Tweets, In Proc. of WASSA-17, pages 58–65.</li>
-                    <li>Sunghwan Mac Kim, Alessandro Valitutti, and Rafael A. Calvo. 2010. Evaluation of unsupervised emotion models to textual affect recognition. In Proc. of the NAACL HLT 2010 Workshop on Computational Approaches to Analysis and Generation of Emotion in Text, pages 62-70.</li>
-                    <li>Lung-Hao Lee, Jian-Hong Li, and Liang-Chih Yu. 2022. Chinese EmoBank: Building Valence-Arousal Resources for Dimensional Sentiment Analysis. ACM Transactions on Asian and Low-Resource Language Information Processing, 21(4): Article 65, 1-18.</li>
-                    <li>N. Malandrakis, A. Potamianos, E. Iosif, and S. Narayanan. 2013. Distributional semantic models for affective text analysis. IEEE Transactions on Audio, Speech, and Language Processing, 21(11): 2379-2392.</li>
-                    <li>Myriam Munezero, Tuomo Kakkonen, and Calkin S. Montero. 2011. Towards automatic detection of antisocial behavior from texts. In Proc. of the Workshop on Sentiment Analysis where AI meets Psychology (SAAIP) at IJCNLP-11, pages 20-27.</li>
-                    <li>Georgios Paltoglou, Mathias Theunis, Arvid Kappas, and Mike Thelwall. 2013. Predicting emotional responses to long informal text. IEEE Trans. Affective Computing, 4(1):106-115.</li>
-                    <li>Jie Ren and Jeffrey V. Nickerson. 2014. Online review systems: How emotional language drives sales. In Proc. of AMCIS-14.</li>
-                    <li>James A. Russell. 1980. A circumplex model of affect. Journal of Personality and Social Psychology, 39(6):1161.</li>
-                    <li>Wen-Li Wei, Chung-Hsien Wu, and Jen-Chun Lin. 2011. A regression approach to affective rating of Chinese words from ANEW. In Proc. of ACII-11, pages 121-131.</li>
-                    <li>Liang-Chih Yu, Cheng-Wei Lee, Huan-Yi Pan, Chih-Yueh Chou, Po-Yao Chao, Zhi-Hong Chen, Shu-Fen Tseng, Chien-Lung Chan and K. Robert Lai. 2018. Improving early prediction of academic failure using sentiment analysis on self-evaluated comments, Journal of Computer Assisted Learning, 34(4):358-365.</li>
-                    <li>Liang-Chih Yu, Lung-Hao Lee, Shuai Hao, Jin Wang, Yunchao He, Jun Hu, K. Robert Lai, and Xuejie Zhang. 2016a. Building Chinese affective resources in valence-arousal dimensions. In Proc. of NAACL/HLT-16, pages 540-545.</li>
-                    <li>Liang-Chih Yu, Lung-Hao Lee, Jin Wang and Kam-Fai Wong. 2017. IJCNLP-2017 Task 2: Dimensional sentiment analysis for Chinese phrases, In Proc. of IJCNLP-17, pages 9-16.</li>
-                    <li>Liang-Chih Yu, Lung-Hao Lee and Kam-Fai Wong. 2016b. Overview of the IALP 2016 shared task on dimensional sentiment analysis for Chinese words, In Proc. of IALP-16, pages 156-160.</li>
-                    <li>Liang-Chih Yu, Jin Wang, K. Robert Lai and Xuejie Zhang. 2020. Pipelined neural networks for phrase-level sentiment intensity prediction, IEEE Transactions on Affective Computing, 11(3), 447-458.</li>
-                    <li>Liang-Chih Yu, Jin Wang, Bo Peng, Chu-Ren Huang. 2021. ROCLING-2021 shared task: dimensional sentiment analysis for educational texts, In Proc. of ROCLING-21, pages 385-388.</li>
-                    <li>Jin Wang, Liang-Chih Yu, K. Robert Lai and Xuejie Zhang. 2016. Community-based weighted graph model for valence-arousal prediction of affective words, IEEE/ACM Trans. Audio, Speech and Language Processing, 24(11):1957-1968.</li>
-                    <li>Jin Wang, Liang-Chih Yu, K. Robert Lai and Xuejie Zhang. 2020. Tree-structured regional CNN- LSTM model for dimensional sentiment analysis, IEEE/ACM Transactions on Audio Speech and Language Processing, 28, 581–591.</li>
-                    <li>Chuhan Wu, Fangzhao Wu, Yongfeng Huang, Sixing Wu and Zhigang Yuan. 2017. THU NGN at IJCNLP-2017 Task 2: Dimensional sentiment analysis for Chinese phrases with deep LSTM, In Proc. of IJCNLP-17, pages 42-52.</li>
-                    <li>Suyang Zhu, Shoushan Li and Guodong Zhou. 2019. Adversarial attention modeling for multi- dimensional emotion regression, In Proc. of ACL-19, pages 471–480.</li>
+                    <li>Lung-Hao Lee, and Yi Lu (2021). Multiple Embeddings Enhanced Multi-Graph Neural Networks for Chinese Healthcare Named Entity Recognition. IEEE Journal of Biomedical and Health Informatics (IEEE JBHI), 25(7): 2801- 2810.</li>
+                    <li>Lung-Hao Lee, Chao-Yi Chen, Liang-Chih Yu, and Yuen-Hsien Tseng (2022). Overview of the ROCLING 2022 Shared Task for Chinese Healthcare Named Entity Recognition. In Proceedings of the 34th Conference on Computational Linguistics and Speech Processing (ROCLING'22), pp. 363-368.</li>
                 </ul>
             </div>
         </div>
