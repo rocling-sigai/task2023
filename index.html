@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ROCLING 2024 Shared Task</title>
+    <title>ROCLING 2023 Shared Task</title>
 
     
     <!-- 匯入bootstrap -->
@@ -52,16 +52,20 @@
             <div class="collapse navbar-collapse navbar-collapse-center" id="collapsingNavbarMd">
                 <ul class="nav navbar-nav navbar-center" >
 
-                    <li class="single"><a href="javascript:;" class="navItems" navTo="#intro">Background </a></li>
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#intro">Background</a></li>
 
                     <li class="single"><a href="javascript:;" class="navItems" navTo="#task">Task Description</a></li>
 
                     <li class="single"><a href="javascript:;" class="navItems" navTo="#registration">Data</a></li>
 
                     <li class="single"><a href="javascript:;" class="navItems" navTo="#key_note">Evaluation</a></li>
-                    
-                    <li class="single"><a href="javascript:;" class="navItems" navTo="#special">Important Dates (temp)</a></li>
 
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#key_note">Results</a></li>
+                    
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#special">Important Date</a></li>
+
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#special">Baseline System</a></li>
+                    
                     <li class="single"><a href="javascript:;" class="navItems" navTo="#ref">References</a></li>
 
                 </ul>
@@ -75,8 +79,8 @@
     <div class="welcome">
         <div class="wrap">
             <div class="item text">
-                <h1>ROCLING 2024 Shared Task<br>
-                    Chinese Dimensional Sentiment Analysis for Medical Self-Reflection Texts</h1>
+                <h1>ROCLING 2023 Shared Task 1<br>
+                    MultiNER-Health Chinese Multi-genre Named Entity Recognition in the Healthcare Domain</h1>
                 <div class="session">
                     <h2>
                         Organizers
@@ -84,28 +88,10 @@
                     <div class="people">
                         <div class="author">
                             <p>
-                                <strong>李龍豪 Lung-Hao Lee、林孜彌 Tzu-Mi Lin</strong><br>
-                                國立陽明交通大學 智能系統所<br>
-                                Institute of Artificial Intelligence Innovation<br>
-                                National Yang Ming Chiao Tung University<br>
-                            </p>
-                        </div>
-        
-                        <div class="author">
-                            <p>
-                                <strong>施琇敏 Hsiu-Min Shih、徐國鎧 Kuo-Kai Shyu</strong><br>
-                                國立中央大學電機工程學系<br>
+                                <strong>李龍豪 Lung-Hao Lee、林孜彌 Tzu-Mi Lin、陳昭沂 Chao-Yi Chen</strong><br>
+                                國立中央大學 電機工程學系<br>
                                 Department of Electrical Engineering<br>
                                 National Central University<br>
-                            </p>
-                        </div>
-        
-                        <div class="author">
-                            <p>
-                                <strong>許善淳 Anna Hsu、呂佩穎Peih-Ying Lu</strong><br>
-                                高雄醫學大學 醫學系 醫學人文與教育學科<br>
-                                Department of Medical Humanities and Education<br>
-                                Kaohsiung Medical University<br>
                             </p>
                         </div>
                         
@@ -120,24 +106,11 @@
 
     <div class="introduction" id="intro">
 
-        <div class="introduce_div_before">
-            <div class="introduce_div">
-                <div class="list">
-                    <ul>
-                        <li>Registration: codabench url</li>
-                        <li>Contact:<a href="mailto:lhlee@nycu.edu.tw" title="lhlee@nycu.edu.tw">Lung-Hao Lee</a> </li>
-                    </ul>
-                </div>
-<!--                 <h1>Registration</h1>
-                <p>CodaBench page: <a href="https://www.codabench.org/competitions/2137/" target="_blank">https://www.codabench.org/competitions/2137/</a></p> -->
-            </div>
-        </div>
-
         <div class="contact_div_before">
             <div class="contact_div">
                 <div class="contact_p">
                     <h1>Contact</h1>
-                    <p>Lung-Hao Lee <lhlee@nycu.edu.tw></p>
+                    <p>Please join our Google group for direct communication at<rocling23-shared-task@googlegroups.com.></p>
                 
                 </div>
             </div>
@@ -146,9 +119,11 @@
         <div class="introduce_div_before">
             <div class="introduce_div">
                 <h1>Background</h1>
-                <p>Sentiment analysis has emerged as a leading technique to automatically identify affective information within texts. In sentiment analysis, affective states are generally represented using either categorical or dimensional approaches (Calvo and Kim, 2013). The categorical approach represents affective states as several discrete classes (e.g., positive, negative, neutral), while the dimensional approach represents affective states as continuous numerical values on multiple dimensions, such as valence-arousal (VA) space (Russell, 1980), as shown in Fig. 1. The valence represents the degree of pleasant and unpleasant (or positive and negative) feelings, and the arousal represents the degree of excitement and calm. Based on this two-dimensional representation, any affective state can be represented as a point in the VA coordinate plane by determining the degrees of valence and arousal of given words (Wei et al., 2011; Malandrakis et al., 2013; Wang et al., 2016; Du and Zhang, 2016; Wu et la., 2017; Yu et al., 2020; Deng et al., 2022) or texts (Kim et al., 2010; Paltoglou et al, 2013; Goel et la., 2017; Zhu et al., 2019; Wang et al., 2019; 2020; Deng et al., 2023).</p>
-                <p>The first dimensional sentiment analysis (DSA) task for Chinese words (Yu et al., 20216) was organized at the IALP 2016 conference. The second edition of DSA task was organized at the IJCNLP 2017 conference to include both Chinese words and phrases (Yu et al., 2017). The third edition was organized in the ROCLING 2021 conference to explore the sentence-level dimensional sentiment analysis task on educational texts (students’ self-evaluated comments) (Yu et al., 2021). This year, we organize the fourth edition of DSA task to analyze medical multi-sentence texts (doctors’ self-reflection feelings).</p>
-                <img src ="image/va.png">
+                <p>Named Entity Recognition (NER) is a fundamental task in information extraction that locates the mentions of named entities and classifies them (e.g., person, organization and location) in unstructured texts. The NER task has traditionally been solved as a sequence labeling problem, where entity boundaries and category labels are jointly predicted. Chinese NER is more difficult to process than English NER. Chinese language is logographic and provides no conventional features like capitalization. In addition, due to a lack of delimiters between characters, Chinese NER is correlated with word segmentation, and named entity boundaries are also word boundaries. However, incorrectly segmented entity boundaries will cause error propagation in NER. For example, in a particular context, a disease entity “思覺失調症” (schizophrenia) may be incorrectly segmented into three words: “思覺” (thinking and feeling), “失調” (disorder) and “症” (disease).</p>
+                <p>In the digital era, healthcare information-seeking users usually search and browse web content in click-through trails to obtain healthcare-related information before making a doctor’s appointment for diagnosis and treatment. Web texts are valuable sources to provide healthcare information such as health-related news, digital health magazines and medical question/answer forums. Domain-specific healthcare information includes many proper names, mainly as named entities, such as “葡萄糖六磷酸鹽去氫酶” (Glucose-6-Phosphate Dehydrogenase; G6PD), “電腦斷層掃描” (computed tomography; CT), and “靜脈免疫球蛋白注射” (intravenous immunoglobulin; IVIG). In summary, Chinese healthcare NER is an important and essential task in natural language processing to automatically identify healthcare entities such as symptoms, chemicals, diseases, and treatments for machine reading and understanding.</p>
+                <p>Following the ROCLING-2022 shared task focused on Chinese healthcare NER, we organize a MultiNER-Health shared task for multi-genre NER in the healthcare domain. In this shared task, we have three genres:</p>
+                
+                <p>Named entities may be used in different word forms in other genres. For example, “後天免疫缺乏症候群” (Acquired Immunodeficiency Syndrome; AIDS) is commonly used as a spoken language form “愛滋病” in the medical forums. On the other hand, “甘油三酯” is a different usage referred to as “三酸甘油酯” (triglyceride; TG) in Wikipedia.</p>
             </div>
 <!--             <div class="figure"> -->
                 <!-- <p>If you have any questions, </p> -->
@@ -164,7 +139,7 @@
         <div class="introduce_div_before">
             <div class="introduce_div">
                 <h1>Task Description</h1>
-                <p>Dimensional sentiment analysis is an effective technique to recognize the valence-arousal ratings from texts, indicating the degree from most negative to most positive for valence, and from most calm to most excited for arousal. In this task, participants are asked to provide a real-valued score from 1 to 9 for both valence and arousal dimensions for each doctors’ self-reflection texts. The input format is “ID, texts”, and the output format is “ID, vallence_rating, arousal_rating”. Below are the input/output formats of the example sentences.</p>
+                <p>A total of 10 entity types are described and some examples are provided in Table I for Chinese healthcare NER. In this task, participants are asked to predict the named entity boundaries and categories for each given sentence. We use the common BIO (Beginning, Inside, and Outside) format for NER tasks. The B-prefix before a tag indicates that the character is the beginning of a named entity and I-prefix before a tag indicates that the character is inside a named entity. An O tag indicates that a token belongs to no named entity. Below are the example sentences.</p>
                 <div class="part">
                     <h3>Example 1</h3>
                     <p>Input: ex01, 主治醫師曾經多次強調血液透析和輸血，以病人的狀況就是不建議，已經在加護病房積極治療了兩個禮拜，家屬却遲遲無法達到共識。</p>
