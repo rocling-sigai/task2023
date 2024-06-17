@@ -79,7 +79,7 @@
     <div class="welcome">
         <div class="wrap">
             <div class="item text">
-                <h1>ROCLING 2023 Shared Task 1<br>
+                <h1><span style="color: #2D82B7;">ROCLING 2023 Shared Task 1</span><br>
                     MultiNER-Health Chinese Multi-genre Named Entity Recognition in the Healthcare Domain</h1>
                 <div class="session">
                     <h2>
@@ -140,16 +140,74 @@
             <div class="introduce_div">
                 <h1>Task Description</h1>
                 <p>A total of 10 entity types are described and some examples are provided in Table I for Chinese healthcare NER. In this task, participants are asked to predict the named entity boundaries and categories for each given sentence. We use the common BIO (Beginning, Inside, and Outside) format for NER tasks. The B-prefix before a tag indicates that the character is the beginning of a named entity and I-prefix before a tag indicates that the character is inside a named entity. An O tag indicates that a token belongs to no named entity. Below are the example sentences.</p>
-                <div class="part">
-                    <h3>Example 1</h3>
-                    <p>Input: ex01, 主治醫師曾經多次強調血液透析和輸血，以病人的狀況就是不建議，已經在加護病房積極治療了兩個禮拜，家屬却遲遲無法達到共識。</p>
-                    <p>Output: ex01, 4.750, 2.750</p>
-                    <p></p>
-                    <h3>Example 2</h3>
-                    <p>Input: ex02, 視病如親，這個成語一直是一個難以達成的理想，但在ICU我感受到醫療端與病人和家屬站在同一陣線、共同努力對抗病魔，完成病人的願望的努力，讓我十分的動容。</p>
-                    <p>Output: ex02, 6.900, 5.600</p>
-                    <p></p>
-                </div>
+                <style type="text/css">
+                  .tg  {border-collapse:collapse;border-spacing:0;}
+                  .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Times New Romans, Times New Romans;font-size:20px;
+                    overflow:hidden;padding:10px 5px;word-break:normal;}
+                  .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Times New Romans, Times New Romans;font-size:20px;
+                    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                  .tg .tg-7zrf{background-color:#F3F4F3;border-color:inherit;color:#212121;font-weight:bold;text-align:left;vertical-align:top}
+                  .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+                  </style>
+                  <table class="tg"><thead>
+                    <caption style ="caption-side: top;text-align: center;font-family:Times New Romans;font-size:20px">Table 1. Named Entity Types</caption>
+                    <tr>
+                      <th class="tg-0pky"><span style="font-weight:bolder">Entity Type</span></th>
+                      <th class="tg-0pky">Description</th>
+                      <th class="tg-0pky"><span style="font-weight:bolder;font-style:normal">Examples</span></th>
+                    </tr></thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0pky">Body (BODY)</td>
+                      <td class="tg-0pky">The whole physical structure that forms a person or animal including biological cells, organizations, organs and systems.</td>
+                      <td class="tg-0pky">“細胞核” (nucleus), “神經組織” (nerve tissue), “左心房” (left atrium), “脊髓” (spinal cord), “呼吸系統” (respiratory system)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Symptom (SYMP)</td>
+                      <td class="tg-0pky">Any feeling of illness or physical or mental change that is caused by a particular disease.</td>
+                      <td class="tg-0pky">“流鼻水” (rhinorrhea), “咳嗽” (cough), “貧血” (anemia), “失眠” (insomnia), “心悸” (palpitation), “耳鳴” (tinnitus)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Instrument (INST)</td>
+                      <td class="tg-0pky">A tool or other device used for performing a particular medical task such as diagnosis and treatments.</td>
+                      <td class="tg-0pky">“血壓計” (blood pressure meter), “達文西手臂” (DaVinci Robots), “體脂肪計” (body fat monitor), “雷射手術刀” (laser scalpel)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Examination (EXAM)</td>
+                      <td class="tg-0pky">The act of looking at or checking something carefully in order to discover possible diseases.</td>
+                      <td class="tg-0pky">“聽力檢查” (hearing test), “腦電波圖” (electroencephalography; EEG), “核磁共振造影” (magnetic resonance imaging; MRI)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Chemical (CHEM)</td>
+                      <td class="tg-0pky">Any basic chemical element typically found in the human body.</td>
+                      <td class="tg-0pky">“去氧核糖核酸” (deoxyribonucleic acid; DNA), “糖化血色素” (glycated hemoglobin), “膽固醇” (cholesterol), “尿酸” (uric acid)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Disease (DISE)</td>
+                      <td class="tg-0pky">An illness of people or animals caused by infection or a failure of health rather than by an accident.</td>
+                      <td class="tg-0pky">“小兒麻痺症” (poliomyelitis; polio), “帕金森氏症” (Parkinson’s disease), “青光眼” (glaucoma), “肺結核” (tuberculosis)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Drug (DRUG)</td>
+                      <td class="tg-0pky">Any natural or artificially made chemical used as a medicine.</td>
+                      <td class="tg-0pky">“阿斯匹靈” (aspirin), “普拿疼” (acetaminophen), “青黴素” (penicillin), “流感疫苗” (influenza vaccination)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Supplement (SUPP)</td>
+                      <td class="tg-0pky">Something added to something else to improve human health.</td>
+                      <td class="tg-0pky">“維他命” (vitamin), “膠原蛋白” (collagen), “益生菌” (probiotics), “葡萄糖胺” (glucosamine), “葉黃素” (lutein)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Treatment (TREAT)</td>
+                      <td class="tg-0pky">A method of behavior used to treat diseases.</td>
+                      <td class="tg-0pky">“藥物治療” (pharmacotherapy), “胃切除術” (gastrectomy), “標靶治療” (targeted therapy), “外科手術” (surgery)</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0pky">Time (TIME)</td>
+                      <td class="tg-0pky">Element of existence measured in minutes, days, years.</td>
+                      <td class="tg-0pky">“嬰兒期” (infancy), “幼兒時期” (early childhood), “青春期” (adolescence), “生理期” (on one’s period), “孕期” (pregnancy)</td>
+                    </tr>
+                  </tbody></table>
                 
             </div>  
         </div>
