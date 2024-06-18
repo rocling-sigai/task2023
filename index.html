@@ -155,39 +155,36 @@
                 </style>
                   <table class="tg"><thead>
                     <caption style ="caption-side: top;text-align: center;font-family:Times New Romans;font-size:20px">Table 1. Named Entity Types</caption>
-                    <tr>
-                        <th class="tg-smkr"><span style="font-weight:bolder">Entity Type</span></th>
+                  <tr>
+                        <th class="tg-u49y">Entity Type</span></th>
                         <th class="tg-u49y">Description</th>
-                        <th class="tg-u49y">Input &amp; Output</th>
+                        <th class="tg-u49y">Examples</th>
                       </tr></thead>
                     <tbody>
                       <tr>
-                        <td class="tg-7g23">Formal<br>Texts</td>
+                        <td class="tg-7g23" rowspan="2">Formal<br>Texts</td>
                         <td class="tg-7g23">Ex 1</td>
                         <td class="tg-7g23">Input: 早起也能預防<span style="font-weight:bold">老化</span>，甚至降低<span style="font-weight:bold">阿茲海默症</span>的風險<br><span style="font-weight:400;font-style:normal;text-decoration:none">Output: O, O, O, O, O, O, B-SYMP, I-SYMP, O, O, O, O, O, B-DISE, I-DISE, I-DISE, I-DISE, I-DISE, O, O, O</span></td>
                       </tr>
                       <tr>
-                        <td class="tg-7g23"></td>
                         <td class="tg-7g23">Ex 2</td>
                         <td class="tg-7g23"><span style="font-weight:400;font-style:normal;text-decoration:none">Input: </span><span style="font-weight:bold">壓力</span>、<span style="font-weight:bold">月經</span>引起的<span style="font-weight:bold">痘痘</span>患者<br><span style="font-weight:400;font-style:normal;text-decoration:none">Output: B-SYMP, I-SYMP, O, B-TIME, I-TIME, O, O, O, B-DISE, I-DISE, O, O</span></td>
                       </tr>
                       <tr>
-                        <td class="tg-7g23">Social<br>Media</td>
+                        <td class="tg-7g23" rowspan="2">Social<br>Media</td>
                         <td class="tg-7g23">Ex 3</td>
                         <td class="tg-7g23"><span style="font-weight:400;font-style:normal;text-decoration:none">Input: 如何治療</span><span style="font-weight:bold">胃食道逆流症</span>？<br><span style="font-weight:400;font-style:normal;text-decoration:none">Output: O, O, O, O, B-DISE, I-DISE, I-DISE, I-DISE, I-DISE, I-DISE, O</span></td>
                       </tr>
                       <tr>
-                        <td class="tg-7g23"></td>
                         <td class="tg-7g23">Ex 4</td>
                         <td class="tg-7g23"><span style="font-weight:400;font-style:normal;text-decoration:none">Input: 請問長期打</span><span style="font-weight:bold">善思達針劑</span>是不是會<span style="font-weight:bold">變胖</span>?<br><span style="font-weight:400;font-style:normal;text-decoration:none">Output: O, O, O, O, O, B-DRUG, I-DRUG, I-DRUG, I-DRUG, I-DRUG, O, O, O, O, B-SYMP, I-SYMP, O?</span></td>
                       </tr>
                       <tr>
-                        <td class="tg-7g23">Wikipedia<br>Articels</td>
+                        <td class="tg-7g23" rowspan="2">Wikipedia<br>Articels</td>
                         <td class="tg-7g23">Ex 5</td>
                         <td class="tg-7g23"><span style="font-weight:400;font-style:normal;text-decoration:none">Input: </span><span style="font-weight:bold">抗生素</span>和<span style="font-weight:bold">維生素Ａ酸</span>可用於口服治療<span style="font-weight:bold">痤瘡</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">Output: B-DRUG, I-DRUG, I-DRUG, O, B-DRUG, I-DRUG, I-DRUG, I-DRUG, B-DRUG, O, O, O, O, O, O, O, B-DISE, I-DISE</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">(“痤瘡” is a formal usage of “痘痘” in the example 2 )</span></td>
                       </tr>
                       <tr>
-                        <td class="tg-7g23"></td>
                         <td class="tg-7g23">Ex 6</td>
                         <td class="tg-7g23"><span style="font-weight:400;font-style:normal;text-decoration:none">Input: </span><span style="font-weight:bold">抑酸劑</span>，又稱<span style="font-weight:bold">抗酸劑</span>，抑制<span style="font-weight:bold">胃酸</span>分泌，緩解<span style="font-weight:bold">燒心</span>。<br><span style="font-weight:400;font-style:normal;text-decoration:none">Output: B-CHEM, I-CHEM, I-CHEM, O, O, O, B-CHEM, I-CHEM, I-CHEM, O, O, O, B-CHEM, I-CHEM, O, O, O, O, O, B-DISE, I-DISE, O</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">(“燒心” is the spoken language of “胃食道逆流症” in the example 3 )</span></td>
                       </tr>
@@ -208,7 +205,7 @@
                 <table class="tg"><thead>
                     <caption style ="caption-side: top;text-align: center;font-family:Times New Romans;font-size:20px">Table 2. Shared Task Examples</caption>
                   <tr>
-                        <th class="tg-smkr">Entity Type</span></th>
+                        <th class="tg-u49y">Entity Type</span></th>
                         <th class="tg-u49y">Description</th>
                         <th class="tg-u49y">Input &amp; Output</th>
                       </tr></thead>
