@@ -534,17 +534,17 @@
 .task .part .session-item{
     margin-bottom: 20px;
 }
-.task .part .list{
+.task .introduce_div_before .introduce_div .part .list{
     padding-left: 40px;
 }
 
-.task .part .list ul{  
+.task .introduce_div_before .introduce_div .part .list ul{  
     list-style:outside;
     padding-left:15px;
     font-size: 20px; 
 }
 
-.task .part .list ul li{
+.task .introduce_div_before .introduce_div .part .list ul li{
     padding: 5px 0;
     font-size: var(--p_size);
     font-family: var(--content_face);
